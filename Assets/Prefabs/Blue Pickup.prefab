@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4053060974005191450}
   - component: {fileID: 6789687293240823847}
   - component: {fileID: 7037490006390092635}
+  - component: {fileID: 1674184892585053170}
   m_Layer: 0
   m_Name: Blue Pickup
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2216288603232257811}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.983, z: 5.77}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -68,6 +69,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attractorSpeed: 30
+--- !u!95 &1674184892585053170
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2216288603232257811}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 69dee874eff8bb94bb9a8ae58dae26a8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5473771433229918815
 GameObject:
   m_ObjectHideFlags: 0

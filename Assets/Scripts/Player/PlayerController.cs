@@ -1,5 +1,9 @@
+using System;
 using System.Collections;
+using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 namespace Player
 {
@@ -7,7 +11,7 @@ namespace Player
     public class PlayerController : MonoBehaviour
     {
         private bool CanMove { get; set; } = true;
-        private bool IsSprinting => canSprint && Input.GetKey(sprintKey);
+        public bool IsSprinting => canSprint && Input.GetKey(sprintKey);
         private bool ShouldJump => _characterController.isGrounded && Input.GetKeyDown(jumpKey);
         private bool ShouldCrouch => !_duringCrouchAnimation && _characterController.isGrounded && Input.GetKeyDown(crouchKey);
         
@@ -213,6 +217,7 @@ namespace Player
             _isCrouching = !_isCrouching;
 
             _duringCrouchAnimation = false;
+            
         }
     }
 }

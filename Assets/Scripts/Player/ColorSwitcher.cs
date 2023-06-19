@@ -1,3 +1,4 @@
+using System;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,9 +7,10 @@ namespace Player
 {
     public class ColorSwitcher : MonoBehaviour
     {
-        public static ColorSwitcher Instance;
+        public static ColorSwitcher instance;
         
-        [SerializeField] private Image colorImage;
+        public Image colorImage;
+        public Color neutralColor;
         public Color redColor;
         public Color blueColor;
         public ParticleSystem colorSwitchParticle;
@@ -18,8 +20,15 @@ namespace Player
 
         private void Awake()
         {
-            if (Instance == null) Instance = this;
+            if (instance == null) instance = this;
             else Destroy(gameObject);
+        }
+
+        private void Start()
+        {
+            isRedColor = false;
+            isBlueColor = false;
+            SwitchColor(neutralColor);
         }
 
         private void OnTriggerEnter(Collider other)

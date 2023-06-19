@@ -129,7 +129,7 @@
             {
                 "type": "UnityEngine.Material, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "mesh.userMaterial",
-                "value": "{\"m_Value\":{\"fileID\":2100000,\"guid\":\"dfc08c90188302847afb04f628582097\",\"type\":2}}"
+                "value": "{\"m_Value\":{\"fileID\":2100000,\"guid\":\"28ad738bd65e2c04a8811f9710a14d7a\",\"type\":2}}"
             },
             {
                 "type": "UnityEditor.StaticEditorFlags, UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -164,12 +164,12 @@
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ShapeBuilder.LastPivotPosition",
-                "value": "{\"m_Value\":{\"x\":2.550741195678711,\"y\":-0.09090518951416016,\"z\":2.507021903991699}}"
+                "value": "{\"m_Value\":{\"x\":1.6604137420654297,\"y\":-0.338608056306839,\"z\":1.6609783172607422}}"
             },
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ShapeBuilder.LastSize",
-                "value": "{\"m_Value\":{\"x\":-5.101482391357422,\"y\":0.18181061744689942,\"z\":-5.014043807983398}}"
+                "value": "{\"m_Value\":{\"x\":-3.320826530456543,\"y\":0.677216112613678,\"z\":-3.3219547271728517}}"
             },
             {
                 "type": "UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
