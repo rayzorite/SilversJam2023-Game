@@ -1,9 +1,6 @@
-using System;
 using System.Collections;
-using DG.Tweening;
+using Managers;
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.Rendering.Universal;
 
 namespace Player
 {
@@ -129,6 +126,7 @@ namespace Player
         private void Update()
         {
             if (!CanMove) return;
+            if (PauseManager.instance.isGamePaused) return;
             
             Movement();
             CameraRotation();
