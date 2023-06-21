@@ -8,7 +8,10 @@ namespace Mechanics
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Player"))
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            {
+                // Reset player position
+                other.transform.position = new Vector3(0, 1.5f, 0);
+            }
         }
     }
 }

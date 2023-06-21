@@ -1,6 +1,7 @@
 using System;
 using Player;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 namespace Managers
@@ -57,6 +58,9 @@ namespace Managers
 
         private void Update()
         {
+            if (Input.GetKeyDown(KeyCode.R))
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            
             if (ColorSwitcher.instance.isRedColor)
             {
                 for (int i = 0; i < redBlocks.Length; i++)
